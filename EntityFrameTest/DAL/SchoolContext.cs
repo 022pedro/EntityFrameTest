@@ -8,9 +8,21 @@ using EntityFrameTest.Model;
 
 namespace EntityFrameTest.DAL
 {
+    
     class SchoolContext : DbContext
     {
-        public SchoolContext() : base()
+        //install sql server express: basic->instance name="SQLEXPRESS"; custom-> can choose instance name
+        //view/SqlServerObjectExplorer  add SQLServer/ choose your instance server
+
+        //in connection string
+        //
+        //Data Source= ./instanceName;
+        //Data Source= Server/instanceName; (as seen in SQL Server Object Explorer)
+        //
+
+        public static string connectionString = @"Data Source=HP-022PEDRO;Initial Catalog=Pizza;Trusted_Connection=True;MultipleActiveResultSets=True;
+";
+        public SchoolContext() : base(connectionString)
         {
 
         }
