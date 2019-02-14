@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="DAL\SchoolContext.cs" />
     <Compile Include="Model\Grade.cs" />
+    <Compile Include="Model\Standard.cs" />
     <Compile Include="Model\Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

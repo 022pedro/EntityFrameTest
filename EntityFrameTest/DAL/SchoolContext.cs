@@ -25,12 +25,12 @@ namespace EntityFrameTest.DAL
 
         static SchoolContext()
         {
-            //Database.SetInitializer<SchoolContext>(new CreateDatabaseIfNotExists<SchoolContext>());
+            //Database.SetInitializer(new CreateDatabaseIfNotExists<SchoolContext>());
 
-            //Database.SetInitializer<SchoolDBContext>(new DropCreateDatabaseIfModelChanges<SchoolDBContext>());
-            Database.SetInitializer<SchoolContext>(new DropCreateDatabaseAlways<SchoolContext>());
-            //Database.SetInitializer<SchoolDBContext>(new SchoolDBInitializer());
-            Console.WriteLine("i was used :))))");
+            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<SchoolContext>());
+            Database.SetInitializer(new DropCreateDatabaseAlways<SchoolContext>());
+            //Database.SetInitializer(new SchoolInitializer());
+            Console.WriteLine("i was used :)");
         }
         public SchoolContext() : base(connectionString)
         {

@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace EntityFrameTest.Model
 {
-    public class Grade
+    public class Standard
     {
-        public int GradeID { get; set; }
-        public string GradeName { get; set; }
-        public string Section { get; set; }
+        public int StandardId { get; set; }
+        public string StandardName { get; set; }
 
         public ICollection<Student> Students { get; set; }
-    
     }
 }
